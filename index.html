@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campuseducacion.com | Cursos homologados para oposiciones</title>
+<meta name="description" content="Cursos homologados online para oposiciones de educación. Descuentos de hasta el 35%. Validez garantizada desde 2006.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root{--ink:#0f172a;--muted:#64748b;--line:#e8ecf4;--soft:#f6f8fc;--blue:#2563eb;--violet:#7c3aed;--navy:#0b1437;--grad:linear-gradient(135deg,#2563eb,#7c3aed);--gold:#fbbf24}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h1,h2,h3,.display{font-family:'Plus Jakarta Sans',Inter,sans-serif;letter-spacing:-.025em;line-height:1.12}
+h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:14px}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.lead{color:var(--muted);font-size:17px;max-width:560px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:12px;font-weight:600;font-size:15px;transition:.25s;border:0;cursor:pointer;font-family:inherit}
+.btn-grad{background:var(--grad);color:#fff;box-shadow:0 14px 30px -12px rgba(37,99,235,.6)}
+.btn-grad:hover{transform:translateY(-2px);box-shadow:0 18px 36px -12px rgba(37,99,235,.7)}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-light{background:#fff;color:var(--navy)}
+.btn-light:hover{transform:translateY(-2px)}
+.more{font-weight:600;color:var(--blue);display:inline-flex;align-items:center;gap:6px;font-size:14.5px}
+.more i{transition:.25s}
+.more:hover i{transform:translateX(4px)}
+
+.topbar{background:var(--navy);color:#b7c2e6;font-size:13px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:40px}
+.topbar .r{display:flex;gap:22px}
+.topbar a:hover{color:#fff}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
+header img{height:44px}
+nav{display:flex;gap:28px;align-items:center;font-size:14.5px;font-weight:500;color:#334155}
+nav a:not(.btn):hover{color:var(--blue)}
+nav .btn{padding:11px 20px;font-size:14px}
+.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;color:var(--ink)}
+
+.hero{background:radial-gradient(900px 500px at 90% 0%,rgba(124,58,237,.35),transparent 60%),radial-gradient(700px 400px at 0% 100%,rgba(37,99,235,.35),transparent 60%),var(--navy);color:#fff;padding:100px 0 110px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:6px 16px 6px 6px;border-radius:99px;font-size:13.5px;color:#dbe4ff;margin-bottom:26px}
+.pill b{background:var(--gold);color:#1f1600;padding:3px 10px;border-radius:99px;font-size:12px}
+.hero h1{font-size:clamp(40px,5.6vw,64px);font-weight:800;margin-bottom:22px}
+.hero h1 span{background:linear-gradient(90deg,#93c5fd,#c4b5fd);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .lead{color:#b9c5ec;margin-bottom:36px;font-size:18px}
+.hero .actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.2)}
+.hero .btn-ghost:hover{border-color:#fff}
+.hero-stats{display:flex;gap:44px;margin-top:52px;flex-wrap:wrap}
+.hero-stats b{display:block;font-family:'Plus Jakarta Sans';font-size:28px;font-weight:800}
+.hero-stats span{font-size:13.5px;color:#93a0cc}
+.promo-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(18px);border-radius:28px;padding:36px;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.promo-card .t{font-size:13px;color:#93a0cc;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.promo-card .big{font-family:'Plus Jakarta Sans';font-size:96px;font-weight:800;line-height:1;margin:14px 0 6px;background:linear-gradient(90deg,#fff,#bfdbfe);-webkit-background-clip:text;background-clip:text;color:transparent}
+.promo-card .big small{font-size:44px}
+.promo-card p{color:#b9c5ec;font-size:15px;margin-bottom:24px}
+.promo-card ul{list-style:none;display:grid;gap:12px;margin-bottom:28px;font-size:14.5px;color:#e0e7ff}
+.promo-card li i{color:#7dd3fc;width:20px}
+.promo-card .btn{width:100%;justify-content:center;background:#fff;color:var(--navy)}
+
+.strip{padding:0;margin-top:-44px;position:relative;z-index:2}
+.strip-box{background:#fff;border-radius:22px;box-shadow:0 24px 60px -28px rgba(15,23,60,.3);border:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
+.strip-box div{padding:26px 24px;display:flex;align-items:center;gap:14px;border-right:1px solid var(--line)}
+.strip-box div:last-child{border:0}
+.strip-box i{width:44px;height:44px;border-radius:12px;background:var(--grad);color:#fff;display:grid;place-items:center;flex:none}
+.strip-box b{display:block;font-size:14.5px}
+.strip-box span{font-size:13px;color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);transition:.35s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(15,23,60,.35)}
+.card .img{aspect-ratio:314/129;overflow:hidden;background:var(--soft)}
+.card .img img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.card:hover .img img{transform:scale(1.06)}
+.card .b{padding:26px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:20px;font-weight:700}
+.card p{color:var(--muted);font-size:14.5px;flex:1}
+.tag{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:5px 11px;border-radius:99px;align-self:flex-start;background:#eff6ff;color:var(--blue)}
+.tag.v{background:#f3e8ff;color:var(--violet)}
+.tag.g{background:#ecfdf5;color:#059669}
+
+.tools{background:var(--soft)}
+.sec-head{text-align:center;max-width:620px;margin:0 auto 56px}
+.sec-head .lead{margin:0 auto}
+.tgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.tool{background:#fff;border-radius:20px;padding:26px;border:1px solid var(--line);transition:.3s;display:flex;flex-direction:column;gap:12px}
+.tool:hover{transform:translateY(-4px);border-color:transparent;box-shadow:0 24px 50px -28px rgba(37,99,235,.5)}
+.tool .ico{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;font-size:19px;color:#fff;background:var(--grad)}
+.tool:nth-child(2) .ico{background:linear-gradient(135deg,#f59e0b,#ef4444)}
+.tool:nth-child(3) .ico{background:linear-gradient(135deg,#10b981,#0ea5e9)}
+.tool:nth-child(4) .ico{background:linear-gradient(135deg,#ec4899,#8b5cf6)}
+.tool h3{font-size:16px;font-weight:700}
+.tool span{font-size:13.5px;color:var(--muted)}
+
+.disc{background:var(--navy);color:#fff;border-radius:32px;margin:0 24px;padding:72px 64px;position:relative;overflow:hidden}
+.disc::before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(124,58,237,.55),transparent 70%);right:-160px;top:-180px}
+.disc .wrap{padding:0;position:relative;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:none}
+.disc .eyebrow{color:var(--gold)}
+.disc h2{color:#fff}
+.disc .lead{color:#b9c5ec;margin-bottom:30px}
+.dlist{display:grid;gap:14px}
+.drow{display:flex;align-items:center;gap:22px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:20px 24px;transition:.3s}
+.drow:hover{background:rgba(255,255,255,.12);transform:translateX(6px)}
+.drow .p{font-family:'Plus Jakarta Sans';font-size:40px;font-weight:800;min-width:90px;background:linear-gradient(90deg,var(--gold),#fde68a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.drow b{display:block;font-size:16px}
+.drow span{font-size:14px;color:#a5b2dc}
+
+.guide .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.guide img{border-radius:26px;width:100%;box-shadow:0 30px 60px -30px rgba(15,23,60,.35);background:var(--soft)}
+.guide .lead{margin-bottom:30px}
+.checks{list-style:none;display:grid;gap:12px;margin-bottom:34px}
+.checks li{display:flex;gap:12px;align-items:center;font-weight:500}
+.checks i{width:22px;height:22px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-size:10px}
+
+.wa{background:linear-gradient(135deg,#059669,#22c55e);border-radius:32px;margin:0 24px;padding:56px 60px;color:#fff;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;position:relative;overflow:hidden}
+.wa::after{content:"\f232";font-family:'Font Awesome 6 Brands';position:absolute;right:-20px;bottom:-70px;font-size:260px;opacity:.12}
+.wa h2{color:#fff;font-size:34px;margin-bottom:8px}
+.wa p{opacity:.92;max-width:520px}
+.wa .btn{background:#fff;color:#047857;position:relative;z-index:1}
+
+.blog .sec-head{text-align:left;margin:0 0 44px;display:flex;justify-content:space-between;align-items:flex-end;max-width:none;flex-wrap:wrap;gap:20px}
+.bgrid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px}
+.bgrid .card .img{aspect-ratio:16/10}
+.news{border-radius:22px;padding:30px;background:var(--navy);color:#fff}
+.news h3{font-size:18px;margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.news h3 i{color:var(--gold)}
+.news a{display:block;padding:14px 0;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:#cbd5f5;transition:.2s}
+.news a:hover{color:#fff;padding-left:6px}
+
+.quote{text-align:center;max-width:760px;margin:0 auto}
+.stars{color:var(--gold);margin-bottom:20px;letter-spacing:4px;font-size:16px}
+.quote blockquote{font-family:'Plus Jakarta Sans';font-size:clamp(20px,2.6vw,27px);font-weight:600;line-height:1.45;margin-bottom:22px;letter-spacing:-.015em}
+.slider{position:relative;min-height:190px}
+.slide{position:absolute;inset:0;opacity:0;transform:translateY(12px);transition:opacity .6s,transform .6s;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.slide.active{opacity:1;transform:none;pointer-events:auto;position:relative}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:26px}
+.dots button{width:8px;height:8px;border-radius:99px;border:0;background:#cbd5e1;cursor:pointer;transition:.3s;padding:0}
+.dots button.on{width:26px;background:var(--grad)}
+.who{display:inline-flex;align-items:center;gap:12px;text-align:left}
+.who .av{width:46px;height:46px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-weight:700}
+.who b{display:block}
+.who span{font-size:13.5px;color:var(--muted)}
+
+.partners{padding:48px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.partners .wrap{display:flex;justify-content:center;align-items:center;gap:70px;flex-wrap:wrap}
+.partners img{height:46px;width:auto;opacity:.85;transition:.3s}
+.partners img:hover{opacity:1}
+
+.cta-box{background:var(--grad);border-radius:32px;padding:70px 40px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-box::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.1);left:-140px;top:-180px}
+.cta-box::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08);right:-100px;bottom:-140px}
+.cta-box>*{position:relative}
+.cta-box h2{color:#fff;margin-bottom:14px}
+.cta-box p{opacity:.92;margin-bottom:32px;font-size:17px}
+.cta-box .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-box .btn-ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.3)}
+
+footer{background:var(--navy);color:#94a3c8;padding:70px 0 30px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:50px}
+.fgrid .logo{background:#fff;display:inline-block;padding:10px 14px;border-radius:12px;margin-bottom:18px}
+.fgrid .logo img{height:36px}
+.fgrid h4{color:#fff;font-size:15px;margin-bottom:16px;font-family:'Plus Jakarta Sans'}
+.fgrid ul{list-style:none;display:grid;gap:10px}
+.fgrid a:hover{color:#fff}
+.fgrid p{margin-bottom:6px}
+.social{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap}
+.social a{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center;font-size:16px;transition:.25s}
+.social a:hover{background:var(--grad);transform:translateY(-2px)}
+.fbot{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:13px}
+.fbot div{display:flex;gap:22px;flex-wrap:wrap}
+.fbot a:hover{color:#fff}
+
+.fab{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#22c55e;color:#fff;display:grid;place-items:center;font-size:24px;box-shadow:0 14px 30px -8px rgba(34,197,94,.6);z-index:60;transition:.3s}
+.fab:hover{transform:scale(1.08)}
+
+@media(max-width:960px){
+  .hero .wrap,.disc .wrap,.guide .wrap{grid-template-columns:1fr;gap:50px}
+  .cards,.bgrid{grid-template-columns:1fr 1fr}
+  .tgrid{grid-template-columns:1fr 1fr}
+  .strip-box{grid-template-columns:1fr 1fr}
+  .strip-box div:nth-child(2){border-right:0}
+  .strip-box div:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .topbar .l{display:none}
+  .topbar .wrap{justify-content:flex-end}
+  .burger{display:block}
+  nav{position:fixed;top:112px;left:0;right:0;background:#fff;flex-direction:column;align-items:stretch;padding:24px;gap:18px;border-bottom:1px solid var(--line);display:none;box-shadow:0 20px 40px -20px rgba(0,0,0,.2)}
+  nav.open{display:flex}
+  .disc,.wa{margin:0 16px;padding:50px 32px}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+  section{padding:70px 0}
+  .cards,.bgrid,.tgrid,.fgrid{grid-template-columns:1fr}
+  .strip-box{grid-template-columns:1fr}
+  .strip-box div{border-right:0!important;border-bottom:1px solid var(--line)}
+  .hero-stats{gap:28px}
+  .promo-card .big{font-size:76px}
+  .cta-box{padding:50px 24px}
+  .quote blockquote{font-size:20px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="l"><i class="fa-regular fa-clock"></i>&nbsp; L-V 9:00-13:30 y 16:00-19:30</span>
+    <div class="r">
+      <a href="#">Aula Virtual Alumnos</a>
+      <a href="tel:967607349"><i class="fa-solid fa-phone"></i>&nbsp; 967 607 349</a>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="#"><img src="https://www.campuseducacion.com/images/logo_ced.png" alt="Campuseducacion.com"></a>
+    <nav id="menu">
+      <a href="#cursos">Cursos</a>
+      <a href="#herramientas">Herramientas</a>
+      <a href="#guia">Guía</a>
+      <a href="#blog">Blog</a>
+      <a href="#matricula" class="btn btn-grad">Matricúlate</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú"><i class="fa-solid fa-bars"></i></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="pill"><b>HALLOWEEN 2026</b> Ofertas especiales de matrícula</div>
+      <h1>Cursos homologados <span>online</span> para oposiciones de educación</h1>
+      <p class="lead">Formación para profesores de Secundaria y maestros de Infantil y Primaria. Validez garantizada en todas las Comunidades desde 2006.</p>
+      <div class="actions">
+        <a href="#matricula" class="btn btn-light">Matricúlate aquí <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#cursos" class="btn btn-ghost">Ver cursos</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>4.83/5</b><span>4343 valoraciones</span></div>
+        <div><b>2006</b><span>Cursos baremados</span></div>
+        <div><b>+20</b><span>Años de experiencia</span></div>
+      </div>
+    </div>
+    <div class="promo-card">
+      <div class="t">Ahorra en tu matrícula</div>
+      <div class="big">35<small>%</small></div>
+      <p>Descuento máximo acumulable para opositores y docentes.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> 20% para opositores y docentes</li>
+        <li><i class="fa-solid fa-circle-check"></i> 30% afiliados ANPE o alumnos UCJC</li>
+        <li><i class="fa-solid fa-circle-check"></i> +5% con 2 o más cursos</li>
+      </ul>
+      <a href="#matricula" class="btn">Calcular mi descuento <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="strip-box">
+      <div><i class="fa-solid fa-award"></i><p><b>Homologados</b><span>Baremados desde 2006</span></p></div>
+      <div><i class="fa-solid fa-laptop"></i><p><b>100% online</b><span>A distancia y a tu ritmo</span></p></div>
+      <div><i class="fa-solid fa-building-columns"></i><p><b>Universidad CJC</b><span>Másteres oficiales</span></p></div>
+      <div><i class="fa-solid fa-headset"></i><p><b>Atención personal</b><span>Lunes a viernes</span></p></div>
+    </div>
+  </div>
+</div>
+
+<section id="cursos">
+  <div class="wrap">
+    <div class="sec-head" style="margin:0 0 48px;text-align:left;max-width:none">
+      <span class="eyebrow">Formación</span>
+      <h2>Todo para completar tu baremo</h2>
+      <p class="lead">Cursos, másteres y recursos para opositores y docentes de toda España.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="img"><img src="https://www.campuseducacion.com/images/portada/caja-gratuitos.png" alt="Cursos gratuitos"></div>
+        <div class="b"><span class="tag g">Gratis</span><h3>Cursos online gratis</h3><p>Formación gratuita todo el año para oposiciones de maestros y profesores.</p><a href="#" class="more">Ver cursos <i class="fa-solid fa-arrow-right"></i></a></div>
+      </article>
+      <article class="card">
+        <div class="img"><img src="https://www.campuseducacion.com/images/portada/caja-master.png" alt="Másteres oficiales"></div>
+        <div class="b"><span class="tag v">Universidad</span><h3>Másteres oficiales</h3><p>Másteres 100% online de 60 ECTS adaptados al EEES para tu baremo.</p><a href="#" class="more">Ver másteres <i class="fa-solid fa-arrow-right"></i></a></div>
+      </article>
+      <article class="card">
+        <div class="img"><img src="https://www.campuseducacion.com/images/portada/caja-sexenios.png" alt="Sexenios"></div>
+        <div class="b"><span class="tag">Sexenios</span><h3>Cursos para sexenios</h3><p>Formación reconocida para sexenios del Ministerio de Educación.</p><a href="#" class="more">Ver cursos <i class="fa-solid fa-arrow-right"></i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tools" id="herramientas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Herramientas</span>
+      <h2>Calcula y decide mejor</h2>
+      <p class="lead">Calculadoras y recursos actualizados según la normativa vigente.</p>
+    </div>
+    <div class="tgrid">
+      <a href="#" class="tool"><div class="ico"><i class="fa-solid fa-calculator"></i></div><h3>Baremo CGT</h3><span>Concurso General de Traslados</span></a>
+      <a href="#" class="tool"><div class="ico"><i class="fa-solid fa-chart-line"></i></div><h3>Baremo oposiciones</h3><span>Maestros y Secundaria</span></a>
+      <a href="#" class="tool"><div class="ico"><i class="fa-solid fa-dice"></i></div><h3>Probabilidad de éxito</h3><span>Temas y bolas del examen</span></a>
+      <a href="#" class="tool"><div class="ico"><i class="fa-solid fa-id-card"></i></div><h3>¿A qué me presento?</h3><span>Según tu titulación</span></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="disc" id="descuentos">
+      <div class="wrap">
+        <div>
+          <span class="eyebrow">Precios y promociones</span>
+          <h2>Ahorra hasta un 35% en tu formación</h2>
+          <p class="lead">Si te matriculas de 3 o más cursos, el Curso de Exposición y Defensa ante el Tribunal es gratis.</p>
+          <a href="#matricula" class="btn btn-light">Matricularme ahora <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="dlist">
+          <div class="drow"><div class="p">20%</div><div><b>Opositores y docentes</b><span>Sobre el precio de matrícula</span></div></div>
+          <div class="drow"><div class="p">30%</div><div><b>ANPE y Universidad CJC</b><span>Afiliados, familiares y alumnos</span></div></div>
+          <div class="drow"><div class="p">+5%</div><div><b>Dos o más cursos</b><span>Ahorro adicional acumulable</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="guide" id="guia">
+  <div class="wrap">
+    <img src="https://www.campuseducacion.com/templates/campuseducacion/images/home/guia-opositor/ordenadores-guia-opositor.png" alt="Guía del opositor">
+    <div>
+      <span class="eyebrow">Guía del opositor</span>
+      <h2>Todo sobre el acceso a la función pública docente</h2>
+      <p class="lead">Requisitos, fases, criterios de puntuación y méritos baremados en cada Comunidad Autónoma.</p>
+      <ul class="checks">
+        <li><i class="fa-solid fa-check"></i> Requisitos y fases</li>
+        <li><i class="fa-solid fa-check"></i> Criterios de puntuación</li>
+        <li><i class="fa-solid fa-check"></i> Méritos por Comunidad</li>
+      </ul>
+      <a href="#" class="btn btn-grad">Consultar la guía <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="wa">
+      <div>
+        <h2>Únete a nuestro canal de WhatsApp</h2>
+        <p>Plazas, convocatorias, fechas de examen y bolsas de interinos, al momento.</p>
+      </div>
+      <a href="#" class="btn"><i class="fa-brands fa-whatsapp"></i> Unirme al canal</a>
+    </div>
+  </div>
+</section>
+
+<section class="blog" id="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Blog</span>
+        <h2 style="margin:0">Últimas noticias</h2>
+      </div>
+      <a href="#" class="more">Ver todo el blog <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="bgrid">
+      <article class="card">
+        <div class="img"><img src="https://www.campuseducacion.com/blog/wp-content/uploads/2026/10/TECNOLOGIAS-DIGITALES-2026-Blog.png" alt="Tecnologías digitales"></div>
+        <div class="b"><span class="tag">Curso homologado</span><h3>Tecnologías Digitales aplicadas a la Educación</h3><p>Curso para oposiciones sobre TIC aplicadas a la educación.</p></div>
+      </article>
+      <article class="card">
+        <div class="img"><img src="https://www.campuseducacion.com/blog/wp-content/uploads/2026/10/destacada-3.jpg" alt="Alumnado TEL y TDL"></div>
+        <div class="b"><span class="tag">Aula</span><h3>Alumnado TEL y TDL en las aulas</h3><p>Cómo atender al alumnado con trastorno del lenguaje.</p></div>
+      </article>
+      <aside class="news">
+        <h3><i class="fa-solid fa-bolt"></i> Actualidad</h3>
+        <a href="#">Navarra publica la convocatoria 2027 de Enseñanzas Medias</a>
+        <a href="#">Castilla-La Mancha convocará 949 plazas en 2027</a>
+        <a href="#">Mapa actualizado de convocatorias 2027</a>
+        <a href="#">Interinos Andalucía: bolsa extraordinaria de Música</a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap quote">
+    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+    <div class="slider" id="slider">
+      <div class="slide active">
+        <blockquote>"Un curso muy directo, sin teoría de más. Claro y entendible."</blockquote>
+        <div class="who"><div class="av">IP</div><div><b>Isabel Pérez</b><span>Alumna de Campuseducacion.com</span></div></div>
+      </div>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="wrap">
+    <img src="https://www.campuseducacion.com/site/ucjc/img/ucjcpiegrande.png" alt="Universidad Camilo José Cela">
+    <img src="https://www.campuseducacion.com/site/ucjc/img/cedpieb.png" alt="Campuseducacion.com">
+  </div>
+</section>
+
+<section id="matricula">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Matricúlate con nuestro asistente</h2>
+      <p>Te ayudamos a elegir tus cursos y aplicar todos los descuentos.</p>
+      <div class="actions">
+        <a href="#" class="btn btn-light">Asistente de matrícula <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="tel:967607349" class="btn btn-ghost"><i class="fa-solid fa-phone"></i> 967 607 349</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <span class="logo"><img src="https://www.campuseducacion.com/images/logo_ced.png" alt="Campuseducacion.com"></span>
+        <p>C/ Ejército 23, bajo. 02002 Albacete</p>
+        <p>967 607 349 · 681 288 056 · 699 072 470</p>
+        <p>admin@campuseducacion.com</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Cursos</h4>
+        <ul><li><a href="#">Infantil</a></li><li><a href="#">Primaria</a></li><li><a href="#">Secundaria</a></li><li><a href="#">Competencia Digital</a></li></ul>
+      </div>
+      <div>
+        <h4>Recursos</h4>
+        <ul><li><a href="#guia">Guía del opositor</a></li><li><a href="#blog">Blog</a></li><li><a href="#">Quiénes somos</a></li><li><a href="#">Contacto</a></li></ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Campuseducacion.com</span>
+      <div><a href="#">Privacidad</a><a href="#">Aviso legal</a><a href="#">Cookies</a><a href="#">Condiciones</a></div>
+    </div>
+  </div>
+</footer>
+
+<a href="tel:967607349" class="fab" aria-label="Llamar"><i class="fa-solid fa-phone"></i></a>
+
+<script>
+const menu=document.getElementById('menu');
+document.getElementById('burger').onclick=()=>menu.classList.toggle('open');
+const slides=[...document.querySelectorAll('#slider .slide')];
+const dots=document.getElementById('dots');
+let cur=0,timer;
+slides.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Reseña '+(i+1));b.onclick=()=>go(i);dots.appendChild(b)});
+function go(i){
+  slides[cur].classList.remove('active');
+  dots.children[cur].classList.remove('on');
+  cur=i;
+  slides[cur].classList.add('active');
+  dots.children[cur].classList.add('on');
+}
+function auto(){if(slides.length>1){clearInterval(timer);timer=setInterval(()=>go((cur+1)%slides.length),5000)}}
+if(slides.length){dots.children[0].classList.add('on');auto()}
+document.getElementById('slider').onmouseenter=()=>clearInterval(timer);
+document.getElementById('slider').onmouseleave=auto;
+</script>
+</body>
+</html>

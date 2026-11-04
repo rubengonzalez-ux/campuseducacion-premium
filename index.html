@@ -42,10 +42,13 @@ h2{font-size:clamp(34px,4.6vw,56px);font-weight:700}
 
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.7);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.05)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;height:72px}
-header img{height:42px}
-nav{display:flex;gap:30px;align-items:center;font-size:14.5px;font-weight:500;color:#374151}
-nav a:not(.btn):hover{color:var(--a)}
-nav .btn{padding:11px 20px;font-size:14px}
+.brand{display:inline-flex;align-items:center;background:#fff;padding:9px 18px;border-radius:18px;border:1px solid var(--line);box-shadow:0 12px 30px -16px rgba(15,15,40,.3);transition:.3s}
+.brand:hover{transform:translateY(-2px);box-shadow:0 18px 36px -16px rgba(99,102,241,.45)}
+.brand img{height:46px;width:auto}
+nav{display:flex;gap:6px;align-items:center;font-size:14.5px;font-weight:500;color:#374151;background:rgba(255,255,255,.6);border:1px solid var(--line);padding:6px;border-radius:99px;box-shadow:0 10px 30px -18px rgba(15,15,40,.25)}
+nav a:not(.btn){padding:9px 18px;border-radius:99px;transition:.25s}
+nav a:not(.btn):hover{background:var(--g);color:#fff}
+nav .btn{padding:11px 22px;font-size:14px;margin-left:4px}
 .burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;color:var(--ink)}
 
 .hero{position:relative;overflow:hidden;padding:90px 0 120px;background:#fafafe}
@@ -232,13 +235,13 @@ footer{padding:80px 0 34px;font-size:14px;color:#6b7280}
 
 <header>
   <div class="wrap">
-    <a href="#"><img src="logo.png" alt="Campuseducacion.com"></a>
+    <a href="#" class="brand"><img src="logo.png" alt="Campuseducacion.com"></a>
     <nav id="menu">
       <a href="#cursos">Cursos</a>
       <a href="#herramientas">Herramientas</a>
       <a href="#guia">Guía</a>
       <a href="#blog">Blog</a>
-      <a href="#matricula" class="btn btn-ink">Matricúlate</a>
+      <a href="#matricula" class="btn btn-ink">Matricúlate <i class="fa-solid fa-arrow-right"></i></a>
     </nav>
     <button class="burger" id="burger" aria-label="Menú"><i class="fa-solid fa-bars"></i></button>
   </div>

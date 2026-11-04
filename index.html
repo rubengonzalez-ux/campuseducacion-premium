@@ -53,8 +53,8 @@ nav a:not(.btn):hover::after{width:100%}
 nav .btn{padding:12px 24px;font-size:14.5px;margin-left:8px;border-radius:99px;background:var(--ink);color:#fff;box-shadow:0 12px 26px -12px rgba(10,10,15,.6)}
 nav .btn:hover{background:var(--g);box-shadow:0 16px 34px -12px rgba(99,102,241,.65)}
 header{background:rgba(255,255,255,.9);border-bottom:1px solid #f0f0f5}
-header .wrap{height:84px}
-.burger{display:none;background:none;border:0;font-size:22px;cursor:pointer;color:var(--ink)}
+header .wrap{height:84px;position:relative}
+.burger{display:none;width:46px;height:46px;border-radius:14px;border:1px solid var(--line);background:#fff;font-size:18px;cursor:pointer;color:var(--ink);place-items:center}
 
 .hero{position:relative;overflow:hidden;padding:90px 0 120px;background:#fafafe}
 .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(90px);opacity:.55;pointer-events:none}
@@ -210,19 +210,48 @@ footer{padding:80px 0 34px;font-size:14px;color:#6b7280}
   .topbar .l{display:none}
   .topbar .wrap{justify-content:flex-end}
   .burger{display:block}
-  nav{position:fixed;top:110px;left:16px;right:16px;background:#fff;flex-direction:column;align-items:stretch;padding:26px;gap:20px;border-radius:24px;border:1px solid var(--line);display:none;box-shadow:0 30px 60px -20px rgba(0,0,0,.2)}
+  nav{position:absolute;top:calc(100% + 10px);left:24px;right:24px;background:#fff;flex-direction:column;align-items:stretch;padding:22px;gap:6px;border-radius:24px;border:1px solid var(--line);display:none;box-shadow:0 30px 60px -20px rgba(0,0,0,.2)}
   nav.open{display:flex}
+  nav a:not(.btn){padding:14px 16px;border-radius:14px;font-size:16px}
+  nav a:not(.btn)::after{display:none}
+  nav a:not(.btn):hover{background:var(--soft)}
+  nav .btn{margin:10px 0 0;justify-content:center}
   .disc,.wa{margin:0 16px;padding:56px 36px}
   .fgrid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){
-  section{padding:76px 0}
+  .wrap{padding:0 18px}
+  section{padding:64px 0}
+  header .wrap{height:72px}
+  .brand img{height:44px}
+  nav{left:18px;right:18px}
   .bento,.cards,.tgrid,.bgrid,.fgrid{grid-template-columns:1fr}
   .bc.big,.cards .feat{grid-column:auto}
-  .hero{padding:60px 0 90px}
-  .hero h1{font-size:46px}
-  .partners .wrap{gap:40px}
-  .cta-box{padding:64px 24px}
+  .bc.big{padding:28px}
+  .bc .n{font-size:60px}
+  .hero{padding:50px 0 70px}
+  .hero h1{font-size:44px}
+  .hero .lead{font-size:17px}
+  .actions .btn{width:100%;justify-content:center}
+  .head{margin-bottom:36px}
+  h2{font-size:34px}
+  .cards .feat h3{font-size:26px}
+  .disc{margin:0 12px;padding:56px 26px;border-radius:30px}
+  .disc .wrap{padding:0}
+  .row{padding:18px;gap:16px}
+  .row .p{font-size:36px;min-width:84px}
+  .wa{margin:0 12px;padding:44px 26px;border-radius:28px}
+  .wa h2{font-size:32px}
+  .wa .btn{width:100%;justify-content:center}
+  .guide .wrap{gap:44px}
+  .guide .pic::before{display:none}
+  .partners .wrap{gap:32px}
+  .partners img{height:36px}
+  .cta-box{padding:56px 22px;border-radius:30px}
+  .cta-box .actions .btn{width:100%;justify-content:center}
+  .fbot{flex-direction:column}
+  .fab{right:16px;bottom:16px;width:52px;height:52px}
+  .track{font-size:17px;gap:36px}
 }
 </style>
 </head>

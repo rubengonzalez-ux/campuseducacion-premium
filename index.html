@@ -35,10 +35,10 @@ h2{font-size:clamp(34px,4.6vw,56px);font-weight:700}
 .more i{transition:.3s}
 .more:hover i{transform:translateX(5px)}
 
-.topbar{background:#fff;color:var(--muted);font-size:13px;border-bottom:1px solid var(--line)}
+.topbar{background:var(--ink);color:#9ca3af;font-size:13px}
 .topbar .wrap{display:flex;justify-content:space-between;align-items:center;height:38px}
 .topbar .r{display:flex;gap:24px}
-.topbar a:hover{color:var(--ink)}
+.topbar a:hover{color:#fff}
 
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.7);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid rgba(0,0,0,.05)}
 header .wrap{display:flex;justify-content:space-between;align-items:center;height:84px}
@@ -78,10 +78,10 @@ header .wrap{height:84px;position:relative}
 .dark-chip{display:flex;gap:10px;align-items:center;margin-top:22px;font-size:14px;color:var(--ink)}
 .dark-chip i{color:var(--a)}
 
-.marquee{background:#fff;color:var(--ink);padding:22px 0;overflow:hidden;white-space:nowrap;border-block:1px solid var(--line)}
+.marquee{background:var(--ink);color:#fff;padding:22px 0;overflow:hidden;white-space:nowrap}
 .track{display:inline-flex;gap:56px;animation:slide 30s linear infinite;font-family:'Space Grotesk';font-size:20px;font-weight:500}
 .track span{display:inline-flex;align-items:center;gap:14px}
-.track i{color:var(--a);font-size:16px}
+.track i{color:var(--c);font-size:16px}
 @keyframes slide{to{transform:translateX(-50%)}}
 
 .cards{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:auto auto;gap:22px}
